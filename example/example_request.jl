@@ -25,6 +25,7 @@ my_api_token  = "nunya business, gotta go get your own from synoptic.com (after 
 #each location's associated positive integer to the beginning of your time there, with the last entry mapping 0 to the end of your time range.
 #You can either edit the example CSVs or write your own and provide the paths as arguments to this function; just be sure to keep the 
 #formatting the same. If you use a different delimiter, then change delim; also keep the column names the same.
+#Also, note that the example CSVs do not contain where I actually was, just some mock data.
 #Lastly, your vars must be an array of valid mesowest variable names
 data = download_mesowest_requests("station_mapping.csv", "station_times.csv"; token = my_api_token, 
                                     archivedir = "archived", vars = ["air_temp_set_1"], delim = ", ")
